@@ -31,15 +31,15 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="team" class="anchor" href="#team"><span class="octicon octicon-link"></span></a>Team</h3>
+        <h2>
+<a name="team" class="anchor" href="#team"><span class="octicon octicon-link"></span></a>Team</h2>
 
 <p><a href="http://simiaogao.com/">Simiao Gao</a> (leader)
-<img src="Joshua%20Devasagayaraj" alt="http://joshdev.me/">
+<a href="Joshua%20Devasagayaraj">http://joshdev.me/</a>
 Prof. Manish Parashar (advisor)</p>
 
-<h3>
-<a name="motivation-scope-and-impact" class="anchor" href="#motivation-scope-and-impact"><span class="octicon octicon-link"></span></a>Motivation, Scope and Impact</h3>
+<h2>
+<a name="motivation-scope-and-impact" class="anchor" href="#motivation-scope-and-impact"><span class="octicon octicon-link"></span></a>Motivation, Scope and Impact</h2>
 
 <p>Every single semester at Rutgers, there are around 14,000 course offerings that are available for a student to choose from. So, before the beginning of every semester, every student is facing the same common problem: How would I choose around 5 course offerings from a pool so large? This problem is quite serious because it could impact the student’s performance, future career path and success. Some of the questions this student may also ask include:</p>
 
@@ -67,48 +67,62 @@ What did other successful students of the same major take?</p>
 <td align="left">1. Proposal</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">2. Hadoop environment setup</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left">3. SDW (Student Data Warehouse) data loaded into HBase</td>
-</tr>
-<tr>
-<td align="left">---------</td>
-<td align="left">-----------</td>
-</tr>
-<tr>
 <td align="left">2/21/2014</td>
 <td align="left">1. Recommender System Batch Prototype</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">2. First Report</td>
+<td align="left">3/7/2014</td>
+<td align="left">1. Recommender System Front End UI</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">⋅⋅1. Statement of Work &amp; Requirements</td>
+<td align="left">3/14/2014</td>
+<td align="left">1. Recommender System Batch Program Improvement</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">⋅⋅2. Functional Requirements Spec &amp; UI</td>
+<td align="left">4/4/2014</td>
+<td align="left">1. Recommender System Batch Program Improvement</td>
 </tr>
 </tbody>
-</table><h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+</table><h2>
+<a name="broad-components" class="anchor" href="#broad-components"><span class="octicon octicon-link"></span></a>Broad Components</h2>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="settings--source-data" class="anchor" href="#settings--source-data"><span class="octicon octicon-link"></span></a>Settings &amp; Source Data</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ol>
+<li>4-node hadoop cluster running Ubuntu 13.10, for each node:
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li>2GB RAM</li>
+<li>Duo-core CPU</li>
+<li>200GB HDD</li>
+</ul>
+</li>
+<li>15 years of student course/scheduling record with majors, grades and GPAs.</li>
+</ol><h3>
+<a name="program-flow" class="anchor" href="#program-flow"><span class="octicon octicon-link"></span></a>Program Flow</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p><img src="http://i61.tinypic.com/281g9y1.jpg" alt=""></p>
+
+<h2>
+<a name="technical-challenges--risks" class="anchor" href="#technical-challenges--risks"><span class="octicon octicon-link"></span></a>Technical Challenges &amp; Risks</h2>
+
+<ol>
+<li>Finding a pattern in the data to make good course recommendations is hard because
+
+<ul>
+<li>hard to decide which parameter to use.</li>
+<li>hard to identify the weight of each parameter on the result of our recommendation.</li>
+</ul>
+</li>
+<li>Limited resources. 
+
+<ul>
+<li>Only 15 years of data. Older data are stored in cold format and are kept from us.</li>
+<li>Only 4-node hadoop cluster with a total of 8GB RAM, 8-CORE CPU, and 800GB HDD.</li>
+</ul>
+</li>
+</ol>
       </section>
     </div>
 
